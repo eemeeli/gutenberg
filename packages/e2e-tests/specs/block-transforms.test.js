@@ -96,6 +96,11 @@ const getTransformResult = async ( blockContent, transformName ) => {
 };
 
 describe( 'Block transforms', () => {
+	if ( process.env.POPULAR_PLUGINS ) {
+		it( 'are not tested if popular plugins are enable', () => {
+		} );
+		return;
+	}
 	// Todo: Remove the filter as soon as all fixtures are corrected,
 	// and its direct usage on the editor does not trigger errors.
 	// Currently some fixtures trigger errors (mainly media related)
