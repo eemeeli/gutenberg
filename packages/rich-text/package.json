@@ -25,8 +25,8 @@
 		"@wordpress/compose": "file:../compose",
 		"@wordpress/data": "file:../data",
 		"@wordpress/escape-html": "file:../escape-html",
-		"lodash": "^4.17.11",
-		"rememo": "^3.0.0"
+		"@wordpress/hooks": "file:../hooks",
+		"lodash": "^4.17.11"
 	},
 	"publishConfig": {
 		"access": "public"
